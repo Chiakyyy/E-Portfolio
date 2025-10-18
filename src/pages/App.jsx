@@ -24,7 +24,7 @@ export default function App(){
           </div>
           <div>
             <Card>
-              <img alt="QR code vers profil" src={profile.qr} />
+              <img alt={profile.linkedin} src={profile.qr} />
               <div style={{color:'var(--muted)', fontSize:12, marginTop:8}}>Scannez pour accéder à mon profil pro</div>
             </Card>
           </div>
