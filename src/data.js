@@ -1,3 +1,6 @@
+import avatar from './assets/Chia.png'
+import qr from './assets/Amr_Agouriane_LinkedIn_QR.png'
+
 export const profile = {
   name: "Amr AGOURIANE",
   tagline: "Apprendre, s’adapter, et créer des solutions utiles.",
@@ -5,8 +8,8 @@ export const profile = {
   email: "agouriane.amr@gmail.com",
   github: "https://github.com/Chiakyyy",
   linkedin: "https://www.linkedin.com/in/amr-agouriane-521120283/",
-  photo: "src/assets/Chia.png",
-  qr: "src/assets/Amr_Agouriane_LinkedIn_QR.png"
+  photo: avatar,
+  qr: qr
 }
 
 export const skills = {
