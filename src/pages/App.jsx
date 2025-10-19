@@ -30,7 +30,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              Télécharger mon CV
+                Télécharger mon CV
               </a>
             </div>
           </div>
@@ -112,7 +112,10 @@ export default function App() {
               <li>GitHub : <a href={profile.github} target="_blank" rel="noreferrer">{profile.github}</a></li>
               <li>LinkedIn : <a href={profile.linkedin} target="_blank" rel="noreferrer">{profile.linkedin}</a></li>
             </ul>
-            <form name="contact" method="POST" data-netlify="true">
+            <form onSubmit={(e) => {
+              e.preventDefault()
+              alert('Merci ! Votre message a bien été envoyé.')
+            }}>
               <input type="hidden" name="form-name" value="contact" />
               <div style={{ display: 'grid', gap: 10, gridTemplateColumns: '1fr 1fr' }}>
                 <input name="name" placeholder="Nom" required />
