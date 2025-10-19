@@ -6,6 +6,7 @@ import Badge from '../components/Badge.jsx'
 import { profile, skills, projects } from '../data.js'
 
 export default function App() {
+  const base = import.meta.env.BASE_URL;
   return (
     <>
       <Header />
@@ -21,6 +22,16 @@ export default function App() {
             <div style={{ marginTop: 18, display: 'flex', gap: 12 }}>
               <a className="cta" href="#projets">Voir mes projets</a>
               <a className="cta" href="#contact" style={{ opacity: .9 }}>Me contacter</a>
+            </div>
+            <div style={{ marginTop: 18, display: 'flex', gap: 12 }}>
+              <a
+                href={`${base}MY_CV - FR.pdf`}
+                className="cta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              Télécharger mon CV
+              </a>
             </div>
           </div>
 
