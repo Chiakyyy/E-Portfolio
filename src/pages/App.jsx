@@ -93,8 +93,8 @@ export default function App() {
                   </div>
                   <p><strong>Résultats :</strong> {p.results}</p>
                   <div style={{ display: 'flex', gap: 10 }}>
-                    <a className="cta" href={p.links.demo}>Démo</a>
-                    <a className="cta" href={p.links.github}>Code</a>
+                    <a className="cta" href="#projets">Démo</a>
+                    <a className="cta" href="#projets">Code</a>
                   </div>
                 </Card>
               </div>
